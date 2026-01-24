@@ -7,7 +7,7 @@ Welcome to the official frontend repository of **SoftwareLabs**, where innovatio
 Built by **Paras Dhiman**, this single-page portfolio showcases our philosophy:  
 **Bold design. Flawless performance. Zero compromises.**
 
-🌐 Live Demo: [SoftwareLabs](https://softwarelabs.lovable.app)
+🌐 Live Demo: [SoftwareLabs](https://paars367.github.io/SoftwareLabs/)
 
 ---
 
