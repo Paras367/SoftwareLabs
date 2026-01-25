@@ -39,6 +39,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://unpkg.com/embla-carousel@8.0.0/embla-carousel.umd.js"></script>
 
+ 
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ff7e5f">
+
+
+  <link rel="apple-touch-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/spXYxfHil7XwwnqrLm7ykYdhEGm2/uploads/1759840010946-softwarelabs2.png">
+
 
 <style>
 .navbar-fixed-top {
@@ -2548,6 +2555,25 @@
   </style>
 </section>
 
+  <button id="installBtn" style="display:none;">Install SoftwareLabs</button>
+
+  
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('installBtn').style.display = 'block';
+});
+
+document.getElementById('installBtn').addEventListener('click', () => {
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(() => deferredPrompt = null);
+  document.getElementById('installBtn').style.display = 'none';
+});
+</script>
+  
+
   <script src="assets/js/js1.js"></script>
   <script src="assets/js/js2.js"></script>
   <script src="assets/js/js3.js"></script>
@@ -2566,5 +2592,16 @@
   
   
 
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('SW registered:', reg))
+        .catch(err => console.warn('SW failed:', err));
+    });
+  }
+</script>
+  
 </body>
+
 </html>
