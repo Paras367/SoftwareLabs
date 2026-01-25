@@ -40,7 +40,7 @@
   <script src="https://unpkg.com/embla-carousel@8.0.0/embla-carousel.umd.js"></script>
 
  
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#ff7e5f">
 
 
@@ -2595,7 +2595,7 @@ document.getElementById('installBtn').addEventListener('click', () => {
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('./sw.js')
         .then(reg => console.log('SW registered:', reg))
         .catch(err => console.warn('SW failed:', err));
     });
@@ -2605,3 +2605,4 @@ document.getElementById('installBtn').addEventListener('click', () => {
 </body>
 
 </html>
+
