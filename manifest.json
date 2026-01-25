@@ -1,0 +1,21 @@
+{
+  "name": "SoftwareLabs",
+  "short_name": "SoftwareLabs",
+  "description": "Digital alchemy by Paras Dhiman & Arhan — where code ignites vision.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4B0026",
+  "theme_color": "#ff7e5f",
+  "icons": [
+    {
+      "src": "https://storage.googleapis.com/gpt-engineer-file-uploads/spXYxfHil7XwwnqrLm7ykYdhEGm2/uploads/1759840010946-softwarelabs2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/image1.jpeg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
